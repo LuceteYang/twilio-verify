@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> title </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h3 class="panel-title">Twilio Verify</h3>
+    <form action="/verify-token" method="post">
+    <input type="hidden" name="phone_number" value="<%=phone_number%>"></input>
+    <input type="hidden" name="country_code" value="<%=country_code%>"></input>
+    <input type="text" name="token"placeholder="Verification Token">
+    <input type="submit" value="Verify Phone" id="btn_verify_token">
+	</form>
+  </body>
+</html>
